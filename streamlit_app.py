@@ -35,7 +35,7 @@ low_pred  = model_low.predict(input_df)[0]
 med_pred  = model_med.predict(input_df)[0]
 high_pred = model_high.predict(input_df)[0]
 
-st.subheader("Forecasted Price (₹)")
+st.subheader("Forecasted Price (Rs./Quintal)")
 st.metric("10th Percentile", f"{low_pred:,.2f}")
 st.metric("Median",          f"{med_pred:,.2f}")
 st.metric("90th Percentile", f"{high_pred:,.2f}")
